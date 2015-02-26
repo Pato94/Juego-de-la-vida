@@ -1,0 +1,31 @@
+Como usar esta version del Juego de la vida
+
+Antes que nada el metodo main de este proyecto se encuentra en la clase "Juego". Al iniciar el juego se pide el ancho y el
+alto del universo, luego el programa muestra la matriz en su estado inicial (Vacía) y se queda a la espera del ingreso de
+comandos por teclado.
+
+Sistema de coordenadas
+
+En el programa nos referimos en distintas funcionalidades a una celula a través de su posicion, el programa asume que
+respetamos la siguiente convención.
+Partimos de que la esquina superior-izquierda de la matriz es (0, 0) y aumenta en dirección inferior-derecha celda a celda, 
+siendo la primera componente el valor horizontal y la segunda el valor en vertical, para dejarlo mas claro:
+
+						|(0,0)|(1,0)|(2,0)|
+						|(0,1)|(1,1)|(2,1)|
+						|(0,2)|(1,2)|(2,2)|
+
+Comandos del menú principal
+
+'a'- Avanzar generación: El sistema avanza una generación y se vuelve a mostrar el estado del juego.
+'c'- Cambiar estado célula: Se queda a la espera de coordenadas y, despues de ingresadas, cambia el estado de la célula
+señalada.
+'p'- Dibujar patrón: Se accede a un submenú donde se facilita el dibujo de los patrones descriptos en la consigna. La
+coordenada pedida por esta funcionalidad es la esquina superior-izquierda desde donde se dibujará el patrón. Si el patrón
+solicitado no puede ser dibujado completamente debido a el tamaño del universo, ninguna célula perteneciente al patrón es
+dibujado.
+'s'- Start/Stop (Reloj): Comienza o detiene el reloj dependiendo del estado actual del mismo. Corresponde a la funcionalidad
+de "Ejecución Libre", es decir, las generaciones avanzan y son mostradas cada 1 segundo.
+'r'- Reiniciar: Recomienza la ejecución del programa, comenzando con una nueva matriz de celulas limpia.
+'x'- Salir: Finaliza la ejecución del programa.
+'h'- Ayuda: Muestra en la consola las distintas opciones del menu principal.
