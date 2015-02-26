@@ -1,6 +1,6 @@
 public class Estado {
 	public final static Vivo Vivo = new Vivo();
-	public final static Estado Muerto = null;
+	public final static Estado Muerto = new Estado();
 	public boolean estaVivo(){
 		return false;
 	}
